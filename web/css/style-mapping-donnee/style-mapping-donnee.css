@@ -1,0 +1,48 @@
+/**
+ * @author Mehrez Labidi <mehrez.labidi@esprit.tn> ESPRIT- 2015-2016
+    Created on : 9 déc. 2015, 20:08:53
+    Author     : Mehrez
+*/
+
+ 
+ 
+ .text-red { display: block;margin-left: 34%; font-size: 14px;    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 700;}  
+.col-md-6 { width: 100%!important;    margin-bottom: -1%!important; }
+.col-sm-2 { width: 100%!important;}
+#button-submit{ position: absolute;  top: 30%; right: 0%;}
+#button-reset{ position: absolute; top: 30%;right: 15%;}
+.table-striped>tbody>tr {  background-color: #fff !important;  }
+.table-striped>tbody>tr:hover{ background-color: #f9f9f9 !important;} 
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: 5px 10px; 
+    font-size: 12px; 
+    line-height: 1.5; 
+    border-radius: 3px; 
+    //margin-left: 10%;
+    margin-right: 2%;
+    float: right;
+}
+.btn btn-default{ margin-right: 10%!important; }
+    
+
+#Type label,#DatePriseEffet label,#TypeDonnee label,#NomSocieté label,#Nom label,#Taille label,#Ordre label{margin-left: auto;    margin-right: auto;}
+
+ // centre  margin-left: auto; margin-right: auto;
+.table-striped>tbody>tr {  background-color: #fff !important;  }
+.table-striped>tbody>tr:hover{ background-color: #f9f9f9 !important;} 
+#espritapp_gestionbundle_cgamappingdonnee_nomChamp,#espritapp_gestionbundle_cgamappingdonnee_formatLecture{width: 100%!important;}
+#espritapp_gestionbundle_cgamappingdonnee_typeChamp,#espritapp_gestionbundle_cgamappingdonnee_datePriseEffet{width: 57%!important;}
+input[type="number"]{     width: 55%!important;    margin-left: 20%;}
+   
+#espritapp_gestionbundle_cgamappingdonnee_typeChamp,#espritapp_gestionbundle_cgamappingdonnee_datePriseEffet,
+#espritapp_gestionbundle_cgamappingdonnee_typeDonnee,#espritapp_gestionbundle_cgamappingdonnee_CGASociete{margin-left: auto; margin-right: auto;}
+
+
+.form-control{width: 70%;} //!important; 
+    
+
+
+.box-header.with-border {  border-bottom: 1px solid #fff;}
+.box { position: relative; border-radius: 3px; background: #ffffff; border-top: 3px solid #d2d6de; margin-bottom: 20px; width: 100%;box-shadow: 0 1px 1px rgba(0, 0, 0, 0);}
+.box.box-primary,.box-success,.box-info,.box-danger,.box-warning  {border-top-color: #f39c12 !important;} 

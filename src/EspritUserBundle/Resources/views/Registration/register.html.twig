@@ -1,0 +1,31 @@
+{% extends 'authentication.html.twig' %}
+{% block title %}
+    {{ parent() }}|Log In
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}   
+{% endblock %}
+{% block content %}
+<div class="register-box">
+      <div class="register-logo">
+         <a><b>Gestion</b> Carnet Adresse</a>
+      </div>
+<div class="register-box-body">
+        <p class="login-box-msg">Register a new membership</p>
+{% include "FOSUserBundle:Registration:register_content.html.twig" %}
+ <a href="{{path('fos_user_security_login')}}" class="text-center">I already have a membership</a>
+</div>
+</div>
+{% endblock %}
+{% block javascript %}
+    {{ parent() }}
+     <script>
+      $(function () {
+        $('input').iCheck({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
+          increaseArea: '20%' // optional
+        });
+      });
+    </script>
+{% endblock %}

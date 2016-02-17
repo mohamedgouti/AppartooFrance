@@ -1,0 +1,21 @@
+esprit_gestion:
+    resource: "@EspritGestionBundle/Controller/"
+    type:     annotation
+    prefix:   /appartooparis
+
+esprit_user:
+    resource: "@EspritUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+    
+    
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+AppartooparisGestion:
+    resource: "@EspritGestionBundle/Resources/config/routing.yml"
+    prefix:   /Appartooparis

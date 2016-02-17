@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+ * @author Mehrez Labidi <mehrez.labidi@esprit.tn> ESPRIT- 2015-2016
+    Created on : 19 déc. 2015, 09:39:23
+    Author     : Mehrez
+*/
+
+#nomCompagnie label, #siteCompagnie label,#nomAbrege label,#responsableCompagnie label{
+    margin-left: 10%;   // margin-right: auto;
+}
+
+
+#DatePriseEffet label,#adresseCompagnie label,#mailCompagnie label,#telCompagnie label, #contactCompagnie label
+{margin-left: auto;    margin-right: auto;}
+#espritapp_gestionbundle_cgacompagnie_nomCompagnie,#espritapp_gestionbundle_cgacompagnie_siteCompagnie,#espritapp_gestionbundle_cgacompagnie_nomAbrege,     
+#espritapp_gestionbundle_cgacompagnie_responsableCompagnie,#espritapp_gestionbundle_cgacompagnie_adresseCompagnie,#espritapp_gestionbundle_cgacompagnie_datePriseEffet,
+#espritapp_gestionbundle_cgacompagnie_mailCompagnie,#espritapp_gestionbundle_cgacompagnie_contactCompagnie,#espritapp_gestionbundle_cgacompagnie_telCompagnie
+{margin-left: auto; margin-right: auto;}
+
+#button-submit{    bottom: 5%;    right: 0%;}
+#button-reset{      margin-right: 5%;}
+.col-md-6 { width: 100%!important;    margin-bottom: -1%!important; }
+.col-sm-2 { width: 100%!important;}
+input[type="number"]{     width: 55%!important;    margin-left: 20%;}
+.form-control{width: 70%;} //!important; 
+
+ .text-red { display: block;margin-left: 34%; font-size: 14px;    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 700;}  
+.table-striped>tbody>tr {  background-color: #fff !important;  }
+.table-striped>tbody>tr:hover{ background-color: #f9f9f9 !important;} 
+
+.box box-info{padding-top: 5%!important; width: 100%!important; padding-left: 25%!important;}
+.box.box-primary,.box-success,.box-info,.box-danger,.box-warning  {border-top-color: #f39c12 !important;} 

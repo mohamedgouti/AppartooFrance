@@ -1,0 +1,13 @@
+AppartooParisGestionIndex:
+    path:  /index
+    defaults: { _controller: EspritGestionBundle:Gestion:add }
+    
+    
+AppartooParisGestionEdit:
+    path:  /{username}/edit
+    defaults: { _controller: EspritGestionBundle:Gestion:edit }
+    
+    
+AppartooParisGestionDelete:
+    path:  /{username}/delete
+    defaults: { _controller: EspritGestionBundle:Gestion:delete }

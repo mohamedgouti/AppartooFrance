@@ -1,0 +1,38 @@
+<table id="tableUtilisateurCGA" class="table table-bordered table-striped" width="100%">
+    <thead>
+        <tr>                  
+            <th>Username</th>
+            <th>Adresse e-mail</th>                    
+            <th>Adresse</th>
+            <th>N° téléphone</th>
+            <th>Site</th>
+            <th>Action</th>
+           
+        </tr>
+    </thead> 
+    <tbody>
+        {%for user in users %}
+            <tr>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.adresse}}</td>
+                <td>{{user.telephone}}</td>
+                <td>{{user.site}}</td>
+                <td><a href="{{path('AppartooParisGestionEdit',{'username': user.username})}}">editer</a> &nbsp;&nbsp;<a href="{{path('AppartooParisGestionDelete',{'username': user.username})}}">suppimer</a></td>
+                <td></td>
+            </tr>
+            <tr>
+            {%endfor%}    
+    </tbody>
+    <tfoot>
+        <tr>                   
+            <th>Username</th>
+            <th>Adresse e-mail</th>                    
+            <th>Adresse</th>
+            <th>N° téléphone</th>
+            <th>Site</th>
+            <th>Action</th>
+            
+        </tr>
+    </tfoot>
+</table>

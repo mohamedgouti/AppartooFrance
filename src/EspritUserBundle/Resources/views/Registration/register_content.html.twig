@@ -1,0 +1,62 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+     <div class="form-group has-feedback">  
+          <div class="text-red">
+                        {{ form_errors(form.username) }}
+          </div>
+              {{ form_widget(form.username, { 'attr': {'class':'form-control' ,'placeholder':'Username'} }) }}     
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+           <div class="text-red">
+                        {{ form_errors(form.email) }}
+          </div>
+             {{ form_widget(form.email, { 'attr': {'class':'form-control','placeholder':'Email'} }) }}    
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+           <div class="text-red">
+                        {{ form_errors(form.adresse) }}
+          </div>
+             {{ form_widget(form.adresse, { 'attr': {'class':'form-control','placeholder':'Adresse'} }) }}    
+            <span class="glyphicon glyphicon-map-marker form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+           <div class="text-red">
+                        {{ form_errors(form.telephone) }}
+          </div>
+             {{ form_widget(form.telephone, { 'attr': {'class':'form-control','placeholder':'Téléphone'} }) }}    
+            <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+          </div>
+            <div class="form-group has-feedback">
+           <div class="text-red">
+                        {{ form_errors(form.site) }}
+          </div>
+             {{ form_widget(form.site, { 'attr': {'class':'form-control','placeholder':'Site'} }) }}    
+            <span class="glyphicon glyphicon-book form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <div class="text-red">
+                        {{ form_errors(form.plainPassword.first) }}
+            </div>
+           {{ form_widget(form.plainPassword.first, { 'attr': {'class':'form-control','placeholder':'Password'} }) }}     
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+             <div class="text-red">
+                        {{ form_errors(form.plainPassword.second) }}
+             </div>
+             {{ form_widget(form.plainPassword.second, { 'attr': {'class':'form-control','placeholder':'Retype Password'} }) }}     
+            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+          </div>                         
+          <div class="row">
+            <div class="col-xs-8">
+              <div class="checkbox icheck">                
+              </div>
+            </div><!-- /.col -->
+            <div class="col-xs-4">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">{{ 'registration.submit'|trans }}</button>
+            </div><!-- /.col -->
+          </div>
+{{ form_end(form) }}
